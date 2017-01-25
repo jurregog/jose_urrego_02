@@ -14,9 +14,8 @@ header{
 	background-attachment: ;ckground: -o-linear-gradient(right, #5b7989 , #558FAD); *PARA OPERA
 	background: -moz-linear-gradiant(right,#5b7989 , #558FAD); para firefox
 	background: linear-gradiant( to rigth,#5b7989 , #558FAD);  Estandar
-	
-	
+		
 footer{
 	background-color: #c6d5c5;
-	border-radius: 0  0 10px 10px; 
+	border-radius: 0  0 10px 10px;
 }
