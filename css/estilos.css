@@ -4,59 +4,108 @@ body{
 	background-color: #02010a;
 	color: white;
 	font-family: 'Dancing Script', cursive;
-	width: 900px;
+
+	}
+/* Banner */
+	#banner h1 {
+	font-size: 2.571em;
+	line-height: .5;
+	color: white;
+}
+	#banner h1 a:link, #banner h1 a:visited {
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		}
+	#banner h1 a:hover {
+		text-shadow: 2px 2px 3px #102050;
 	}
 
+	/* Nav Principal*/
+	#banner nav {
+		font-size: 1.43em;
+		height:40px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align:right;
+	}
+
+	#banner nav ul {list-style: none;}
+	#banner nav li {display: inline; margin: 0;}
+
+	#banner nav a:link, #banner nav a:visited {
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+		color: #fff;
+	}
+	#banner nav a:hover, #banner nav a:active{
+		background: hsla(200,60%,50%,.750); 
+		text-shadow:none !important;
+		}
+	#banner nav .active a:link, #banner nav .active a:visited {
+		text-shadow: none !important;
+		background: #3399cc;
+		color: #fff;
+	} 
 
 header{
-	display: flex;
-	flex-direction: column;
 	background: #5b7989;
+	width: 90%;
 	border-radius: 20px 20px 0 0;
-	padding: 10px;
+	padding: 1px;
+	margin: auto;
 } 
 
+header h1{
+	text-shadow: 2px 2px 2px #02010a;
+	
+}
 
-img {
+
+#velero img {
 	border: 2px solid white;
 	border-radius: 5px;
-	width: 90%;
+	margin: 20px;
+	width: 95%;
+	
 }
 
 footer{
+	width: 90%;
+	margin: auto;
 	background-color: #c6d5c5;
 	border-radius: 0  0 10px 10px;
-	padding: 10px;
-	font-size: 17px;
+	padding: 1px;
+	font-size: 16px;
 	color: black
 	}
 
 footer img {
 	width: 20px;
 }
-.contacto  ul{
-	display: inline;
-	
-}
-.redes_sociales ul {
+
+footer ul{
 	display: inline;
 }
+
 .contenedor{
 	display: flex;
 	flex-direction: row;
-	display: inline-flex;
 }
-
+.contenedor_fotos{
+	display: flex;
+	flex-direction: row;
+	}
 .img_central{
 	display: flex;
 	flex-direction: column;
-}
-.img_central {
 	background: #82c3a6;
-	text-align: center;
-	padding: 20px;
+	padding: 10px;
 	margin: auto;
-	border: 1px;
+	border: 2px;
 }
 .img_secundario {
 	display: flex;
@@ -64,36 +113,42 @@ footer img {
 	}
 .img_secundario {
 	background: #d5c75f;
-	text-align: center;
-	padding: 10px;
+	padding: 1px;
 	margin: auto;
+	
 }
 
-#paisajes:hover  {
+#paisajes img:hover {
 	transform: rotate(10deg);
-	box-shadow: #82c3a6;
 	border: 2px;
 	transition-duration: 3s;
 	transition-timing-function: linear;
+	box-shadow: 3px 3px 3px #82c3a6;
+}
+
+#retratos img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+#paisajes img{
+	box-shadow: 2px 2px 2px #02010a;
 }
 @keyframes retratatos-animacion {
-	100% {
+	50% {
 		position: relative;
 		left: 20px
 	}
-	100% {
+	50% {
 		position:relative;
 		top: -5px;
 	}
 	
 }
-#retratos:hover{
-	
+#retratos img:hover{
+	box-shadow: 3px 3px 3px #82c3a6;
 	animation-name: retratatos-animacion;
-	animation-duration: 1s;
+	animation-duration: 3s;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
 	animation-delay: 2s;
-	
 }
